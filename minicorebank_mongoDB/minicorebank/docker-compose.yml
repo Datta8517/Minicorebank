@@ -6,6 +6,20 @@ services:
     environment:
       ZOOKEEPER_CLIENT_PORT: 2181
 
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+
+  grafana:
+     image: grafana/grafana
+     container_name: grafana
+     ports:
+       - "3000:3000"
+
   kafka:
     image: confluentinc/cp-kafka:7.5.0
     ports:
