@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:8082/minicorebank/api"
+  baseURL: import.meta.env.VITE_API_URL
 });
 
 // attach access token
