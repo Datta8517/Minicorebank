@@ -1,11 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-<<<<<<< HEAD
-  baseURL: import.meta.env.VITE_API_URL
-=======
   baseURL:import.meta.env.VITE_API_URL
->>>>>>> f52044e (UI deployment update first)
 });
 
 // attach access token
