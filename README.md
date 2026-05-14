@@ -156,9 +156,7 @@ npm run dev
 POST /api/auth/register
 {
   "username": "john_doe",
-  "email": "john@example.com",
   "password": "SecurePassword123",
-  "fullName": "John Doe"
 }
 
 POST /api/auth/login
@@ -200,8 +198,7 @@ Authorization: Bearer {token}
 GET /api/transactions/account/{accountId}
 ```
 
-**Full API Docs:** http://localhost:8082/minicorebank/swagger-ui.html
-
+**Full API Docs:** https://minicorebank.duckdns.org/minicorebank/swagger-ui/index.html
 ---
 
 ## 🎯 Distributed Systems Patterns
@@ -285,14 +282,13 @@ mvn test jacoco:report
 - [ ] Load Testing (JMeter/Gatling)
 - [ ] Database Sharding
 - [ ] API Rate Limiting
-- [ ] Multi-tenancy Support
+- [ ] Eureka Service Registry
 - [ ] Service Mesh (Istio)
 - [ ] Real-time Notifications (WebSocket)
 - [ ] Redis Caching
 - [ ] Elasticsearch for Transaction Search
-- [ ] Machine Learning for Fraud Detection
-- [ ] Multi-currency Support
-- [ ] Mobile App (iOS/Android)
+- [ ] CI/CD Pipeline
+- [ ] AI-powered Banking Assistant
 
 ---
 
