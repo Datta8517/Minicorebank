@@ -50,3 +50,14 @@ services:
       KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: kafka:29092
     depends_on:
       - kafka
+
+  minicorebank:
+    build: .
+    container_name: minicorebank
+    ports:
+      - "8082:8082"
+    environment:
+      MONGO_URI: your_mongodb_atlas_uri
+      SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:29092
+    depends_on:
+      - kafka
